@@ -125,9 +125,10 @@ const ReviewCard = ({
           width={32}
           height={32}
           className="rounded-full"
+          style={{ width: "auto", height: "auto" }}
         />
         <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white text-white">{name}</figcaption>
+          <figcaption className="text-sm font-medium text-foreground">{name}</figcaption>
         </div>
       </div>
     </figure>

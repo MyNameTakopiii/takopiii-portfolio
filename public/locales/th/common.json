@@ -11,10 +11,10 @@
   "hero": {
     "im": "ฉันคือ",
     "frontendDeveloper": "Frontend",
-    "backendDeveloper": "Backend", 
+    "backendDeveloper": "Backend",
     "fullStackDeveloper": "Full Stack",
     "freelancer": "Freelancer",
-    "greeting": "สวัสดี! ฉันชื่อ วิปัศย์ โชคนันทวงศ์ คุณเรียกฉันว่า takopiii ได้เลย"
+    "greeting": "สวัสดี! ฉันชื่อ วิปัศย์ โชคนันทวงศ์ ชื่อเล่นคือ takopiii"
   },
   "education": {
     "title": "การศึกษาของฉัน",
@@ -23,11 +23,44 @@
     "triamudomPeriod": "2559 - 2565",
     "triamudomDetail": "แผนการเรียน วิทย์-คณิต-คอมพิวเตอร์",
     "kmitl": "สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
-    "kmitlPeriod": "2565 - ปัจจุบัน",
+    "kmitlPeriod": "2565 - 2569",
     "kmitlDetail": "คณะเทคโนโลยีสารสนเทศ ปริญญาตรี",
     "status": {
-      "success": "สำเร็จ",
+      "success": "สำเร็จการศึกษา",
       "inProgress": "กำลังศึกษา"
+    }
+  },
+  "experience": {
+    "title": "ประสบการณ์การทำงาน",
+    "description": "บทบาทระดับมืออาชีพและประสบการณ์การสอนที่หล่อหลอมการเดินทางของฉัน",
+    "skyfrog": {
+      "title": "Web Developer (Internship) @ Skyfrog Co., Ltd.",
+      "period": "มกราคม 2569 – ปัจจุบัน",
+      "detail": "พัฒนา Windows service สำหรับการตรวจสอบระบบแบบเรียลไทม์ และปรับปรุงฟีเจอร์ใน TMS (Transportation Management System) ด้วย .NET และ Ext.js รวมถึงพัฒนา POC สำหรับ Open Claw เพื่อศึกษาระบบและการเชื่อมต่อใหม่ๆ"
+    },
+    "taDsa": {
+      "title": "Teaching Assistant – Data Structure & Algorithm",
+      "period": "พฤศจิกายน 2568 – มีนาคม 2569",
+      "detail": "ตรวจให้คะแนนงานที่ได้รับมอบหมาย และให้คำแนะนำเชิงลึกเกี่ยวกับโครงสร้างข้อมูลและอัลกอริทึมในคาบปฏิบัติ (Python) และคลาสแบบฝึกหัด"
+    },
+    "edvisory": {
+      "title": "Frontend Developer (Internship) @ EDVISORY",
+      "period": "เมษายน 2568 - กรกฎาคม 2568",
+      "detail": "พัฒนาโปรเจกต์ Safejai โดยจัดการระบบหลายภาษา (Thai/English i18n) ด้วย Next.js และ next-i18next รวมถึงจัดการ UI แบบ Responsive ด้วย Tailwind/SCSS และทำงานร่วมกับทีมดีไซน์และแบ็กเอนด์ในการเชื่อมต่อ API และทดสอบระบบแปลภาษา"
+    },
+    "taNoSql": {
+      "title": "Teaching Assistant - NoSQL Databases",
+      "period": "พฤศจิกายน 2567 – มีนาคม 2568",
+      "detail": "ให้คำแนะนำนักศึกษาในการทำความเข้าใจเทคโนโลยี NoSQL เช่น MongoDB, Cassandra และ Neo4j"
+    },
+    "taDatabase": {
+      "title": "Teaching Assistant - Database System Concepts",
+      "period": "กรกฎาคม 2567 – พฤศจิกายน 2567",
+      "detail": "ช่วยเหลือนักศึกษาเกี่ยวกับพื้นฐานของ MySQL รวมถึงการใช้งาน DDL, DQL และ DML"
+    },
+    "status": {
+      "completed": "สำเร็จ",
+      "current": "กำลังทำงาน"
     }
   },
   "certificates": {
@@ -40,9 +73,199 @@
   },
   "projects": {
     "title": "โปรเจคทั้งหมดของฉัน",
-    "description": "แสดงผลงานและเทคโนโลยีที่ฉันเชี่ยวชาญผ่านโปรเจคจริง"
+    "description": "แสดงผลงานและเทคโนโลยีที่ฉันเชี่ยวชาญผ่านโปรเจคจริง",
+    "eyeYoga": {
+      "title": "Eye Yoga",
+      "description": "ระบบตรวจจับและประเมินความถูกต้องของท่าทางผ่านเว็บแคมโดยใช้เทคนิค Human Pose Estimation (MediaPipe, MoveNet, TensorFlow) ผู้ใช้สามารถเลือกท่าที่ต้องการฝึกได้ และระบบจะแสดงท่าอ้างอิงและประเมินผลการปฏิบัติแบบเรียลไทม์ พร้อมให้คะแนนความแม่นยำและการติดตามความก้าวหน้าเพื่อการปรับปรุงอย่างต่อเนื่อง",
+      "features": [
+        "การตรวจจับท่าทางแบบเรียลไทม์ด้วย MediaPipe และ TensorFlow",
+        "การให้คะแนนความแม่นยำและการประเมินผลการปฏิบัติ",
+        "การเลือกท่าและการฝึกในโหมดต่างๆ",
+        "การติดตามความก้าวหน้าและการวิเคราะห์การปรับปรุง"
+      ],
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "FastAPI",
+        "Python"
+      ],
+      "demo": "Demo"
+    },
+    "ticketBever": {
+      "title": "Ticker Bever",
+      "description": "ระบบจองและจัดการตั๋วที่สร้างด้วย Django พร้อม UI ที่ทันสมัยและตอบสนองด้วย Tailwind CSS แพลตฟอร์มนี้รวม Google API สำหรับการยืนยันตัวตนและฟังก์ชันแชทบอท มีแดชบอร์ดวิเคราะห์ด้วย Chart.js และรองรับการประมวลผลการชำระเงินที่ปลอดภัยด้วย PromptPay ผ่านไลบรารี Python",
+      "features": [
+        "การยืนยันตัวตนผู้ใช้และการรวมแชทบอทด้วย Google API",
+        "อินเทอร์เฟซที่ทันสมัยและตอบสนองด้วย Tailwind CSS",
+        "แดชบอร์ดแบบโต้ตอบและการแสดงข้อมูลด้วย Chart.js",
+        "การประมวลผลการชำระเงินที่ปลอดภัยด้วย PromptPay (ไลบรารี Python)",
+        "สร้างด้วย Django เพื่อรองรับระบบหลังบ้านที่ปรับขนาดได้"
+      ],
+      "technologies": [
+        "Django",
+        "Tailwind CSS",
+        "Google API",
+        "Chart.js"
+      ],
+      "demo": "Demo"
+    },
+    "safeJai": {
+      "title": "Safe Jai (Internship)",
+      "description": "เว็บไซต์หลายภาษาที่พัฒนาและออกแบบด้วยการสนับสนุนการทำให้เป็นสากล (i18n) เพื่อให้สามารถใช้ภาษาไทยและอังกฤษได้ สร้างด้วย Next.js และ next-i18next สำหรับการจัดการการแปล ระบบรับประกันการเปลี่ยนภาษาที่ราบรื่น ใช้ Tailwind CSS และ SCSS เพื่อสร้าง UI/UX ที่ตอบสนองและสอดคล้องกับระบบการออกแบบขององค์กร ทำงานร่วมกับทีมออกแบบและหลังบ้านอย่างใกล้ชิดเพื่อรวม API และรับประกันการทำงานของระบบที่มีประสิทธิภาพ",
+      "features": [
+        "การสนับสนุนการทำให้เป็นสากล (i18n) ด้วย Next.js และ next-i18next",
+        "การสนับสนุนหลายภาษา (ไทย / อังกฤษ)",
+        "การออกแบบ UI/UX ที่ตอบสนองด้วย Tailwind CSS และ SCSS",
+        "สอดคล้องกับแนวทางการออกแบบและแบรนด์ขององค์กร",
+        "การรวม API ที่ราบรื่นกับการทำงานร่วมกับทีมหลังบ้าน",
+        "การทดสอบอย่างละเอียดเพื่อประสิทธิภาพและความน่าเชื่อถือของระบบ"
+      ],
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "Scss",
+        "next-i18next"
+      ],
+      "demo": "Demo"
+    },
+    "openhouse": {
+      "title": "Openhouse 2024",
+      "description": "แอปพลิเคชันเว็บแบบโต้ตอบที่พัฒนาเพื่อ IT Open House 2024 เพื่อให้ผู้เรียนมัธยมปลายมีส่วนร่วมในกิจกรรมแบบลงมือปฏิบัติ สร้างด้วย Next.js และจัดแต่งด้วย Magic UI และ ShadCN UI แพลตฟอร์มรับประกันการออกแบบที่ทันสมัย ตอบสนอง และใช้งานง่าย การตรวจสอบฟอร์มขับเคลื่อนด้วย Zod API ถูกจัดทำเอกสารด้วย SwaggerHub และใช้ Tello สำหรับการสื่อสาร โปรเจคนี้ถูกปรับใช้บน Vercel เพื่อการเข้าถึงที่ราบรื่น",
+      "features": [
+        "Frontend สร้างด้วย Next.js และจัดแต่งด้วย Magic UI & ShadCN UI",
+        "การตรวจสอบฟอร์มและการจัดการข้อผิดพลาดด้วย Zod",
+        "เอกสาร API ด้วย SwaggerHub",
+        "การรวม Tello สำหรับการสื่อสาร",
+        "ปรับใช้บน Vercel เพื่อการโฮสต์ที่รวดเร็วและเชื่อถือได้",
+        "ออกแบบเป็นแพลตฟอร์มกิจกรรมแบบโต้ตอบสำหรับผู้เรียนมัธยมปลาย"
+      ],
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "Shadcn",
+        "Zod"
+      ],
+      "demo": "Demo"
+    },
+    "dsView": {
+      "title": "DSView",
+      "description": "โปรแกรมจำลองโครงสร้างข้อมูลแบบโต้ตอบสำหรับนักศึกษาไอที KMITL แสดงการรันโค้ด Python และแอนิเมชันการทำงานของโครงสร้างข้อมูลใน Playground ที่ปรับแต่งได้ ช่วยให้เข้าใจการทำงานของอัลกอริทึมได้ง่ายขึ้น",
+      "features": [
+        "แสดงแอนิเมชันโครงสร้างข้อมูลแบบเรียลไทม์",
+        "รองรับการรันโค้ด Python ในเบราว์เซอร์",
+        "Playground สำหรับทดลองสร้างและจัดการโครงสร้างข้อมูล",
+        "จัดการไฟล์และข้อมูลด้วย MinIO"
+      ],
+      "technologies": [
+        "Next.js",
+        "TanStack",
+        "Fiber",
+        "FastAPI",
+        "MinIO",
+        "PostgreSQL"
+      ],
+      "demo": "Demo"
+    },
+    "khonsongDee": {
+      "title": "Khonsong Dee",
+      "description": "ระบบติดตามการขนส่งและการจัดการฟลีทรถ พัฒนาด้วย FastAPI และสถาปัตยกรรม Microservices รองรับการติดตามตำแหน่งแบบเรียลไทม์และการจัดการข้อมูลรถผ่านแดชบอร์ดที่ทันสมัย",
+      "features": [
+        "การติดตามตำแหน่งรถแบบเรียลไทม์",
+        "ระบบจัดการฟลีทและข้อมูลการขนส่ง",
+        "จัดการ Routing ด้วย Traefik",
+        "สถาปัตยกรรม Microservices ที่ปรับขยายได้"
+      ],
+      "technologies": [
+        "FastAPI",
+        "Traefik",
+        "Next.js",
+        "MongoDB",
+        "PostgreSQL",
+        "RabbitMQ"
+      ],
+      "demo": "Demo"
+    }
   },
   "comingSoon": {
     "title": "เนื้อหาเพิ่มเติมกำลังจะมา..."
+  },
+  "activity": {
+    "title": "กิจกรรมและประสบการณ์ของฉัน",
+    "description": "กิจกรรมและประสบการณ์ที่ฉันได้เข้าร่วมและเรียนรู้",
+    "types": {
+      "academic": "การศึกษา",
+      "event": "กิจกรรม",
+      "work": "งาน"
+    },
+    "items": [
+      {
+        "title": "Web Developer (บริษัท สกายฟร็อก จำกัด)",
+        "period": "มกราคม 2026 – ปัจจุบัน",
+        "role": "Internship Web Developer",
+        "description": "พัฒนาบริการ Windows สำหรับตรวจสอบสถานะและสุขภาพของบริการแบบเรียลไทม์ | ดูแลและปรับปรุงฟีเจอร์ภายในระบบ TMS (Transportation Management System) โดยใช้ .NET และ Ext.js | สร้าง POC สำหรับ Open Claw เพื่อสำรวจความสามารถของระบบและรูปแบบการรวมเข้าด้วยกัน",
+        "type": "work"
+      },
+      {
+        "title": "ผู้ช่วยสอน (TA) - Data Structure & Algorithm",
+        "period": "พฤศจิกายน 2025 – มีนาคม 2026",
+        "role": "ผู้ช่วยสอน",
+        "description": "ตรวจงานและให้คะแนนพร้อมคำแนะนำเชิงลึกเกี่ยวกับ Data Structure & Algorithm ในห้อง Lab (โค้ด Python) และคลาสแบบฝึกหัด",
+        "type": "academic"
+      },
+      {
+        "title": "Frontend Developer (บริษัท เอ็ดไวซอรี่ จำกัด)",
+        "period": "เมษายน 2025 - กรกฎาคม 2025",
+        "role": "Internship Frontend Developer",
+        "description": "พัฒนาและออกแบบระบบแปลภาษา (i18n) สำหรับเว็บไซต์ เพื่อรองรับการใช้งานหลายภาษา (ไทย / อังกฤษ) โดยใช้ Next.js และ next-i18next สำหรับจัดการคำแปล | ใช้ Tailwind CSS และ SCSS สำหรับการจัดการ UI/UX ให้รองรับ Responsive Design และสอดคล้องกับดีไซน์หลักขององค์กร",
+        "type": "work"
+      },
+      {
+        "title": "ผู้ช่วยสอน (TA) - NoSQL Databases",
+        "period": "พฤศจิกายน 2024 – มีนาคม 2025",
+        "role": "ผู้ช่วยสอน",
+        "description": "ตรวจการบ้านและมอบคะแนน พร้อมแนะแนวทางศึกษา NoSQL เช่น MongoDB, Cassandra และ Neo4j",
+        "type": "academic"
+      },
+      {
+        "title": "ผู้ช่วยสอน (TA) - Database System Concepts",
+        "period": "กรกฎาคม 2024 – พฤศจิกายน 2024",
+        "role": "ผู้ช่วยสอน",
+        "description": "ตรวจการบ้านและมอบหมายคะแนน พร้อม Feedback เพื่อพัฒนาทักษะการเขียน Query (SQL)",
+        "type": "academic"
+      },
+      {
+        "title": "Top 10 Huawei ICT Competition 2024-2025 Cloud Track National Round",
+        "period": "2024 - 2025",
+        "role": "Award",
+        "description": "ได้รับรางวัลรองอันดับ 1 (Top 10) ในการแข่งขัน Huawei ICT รอบระดับประเทศ สาย Cloud Track",
+        "type": "event"
+      },
+      {
+        "title": "Top 50 GOSOFT RETAIL TECH HACKATHON 2026",
+        "period": "มกราคม 2026",
+        "role": "Finalist",
+        "description": "ได้เข้ารอบ 50 ทีมสุดท้ายในการแข่งขัน GOSOFT RETAIL TECH HACKATHON 2026",
+        "type": "event"
+      },
+      {
+        "title": "Top 10 in Nextgen Mental Health with GDGoC x AMSA Hackathon",
+        "period": "2024",
+        "role": "Award",
+        "description": "เข้าร่วมการแข่งขันและได้รับรางวัล Top 10 ในหัวข้อ Nextgen Mental Health โดยได้นำเสนอไอเดียและพัฒนาระบบที่ประยุกต์ใช้เทคโนโลยี AI เพื่อช่วยเหลือและดูแลผู้ป่วยที่มีปัญหาทางสุขภาพจิต มุ่งเน้นนวัตกรรมที่ช่วยแก้ปัญหาอย่างยั่งยืนและสามารถเข้าถึงได้ง่าย",
+        "type": "event"
+      },
+      {
+        "title": "NTU Hackathon Certificate",
+        "period": "2024",
+        "role": "Certificate",
+        "description": "เข้าร่วมการแข่งขันและได้พัฒนาเกมแบบโต้ตอบ (Interactive Game) ที่ออกแบบมาเพื่อสนับสนุนการทำกายภาพบำบัดสำหรับผู้ป่วยโรคลมแดด (Heatstroke) โดยนำหลักการ Gamification มาประยุกต์ใช้ เพื่อให้การบริหารเท้ามีความน่าสนใจ สนุกสนาน และสร้างแรงจูงใจให้ผู้ป่วยสามารถทำกายภาพบำบัดได้อย่างต่อเนื่องและมีประสิทธิภาพ",
+        "type": "event"
+      }
+    ]
+  },
+  "common": {
+    "demo": "Demo",
+    "resume": "Resume",
+    "myResume": "Resume ของฉัน"
   }
 }

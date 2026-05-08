@@ -59,7 +59,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
             <h3 className="text-white text-lg sm:text-xl font-semibold truncate">
               {title}
             </h3>
-            <p className="text-[#ff9cb0] text-sm sm:text-base truncate">
+            <p className="text-primary dark:text-[#ff9cb0] text-sm sm:text-base truncate">
               {issuer}
             </p>
           </div>
@@ -91,7 +91,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
           <div className="flex items-center justify-center">
             <button
               onClick={onClose}
-              className="px-6 py-2 bg-gradient-to-r from-[#A91D3A] to-[#C72C41] text-white rounded-lg hover:from-[#C72C41] hover:to-[#E94560] transition-all duration-200 font-medium"
+              className="px-6 py-2 bg-gradient-to-r from-primary dark:from-[#A91D3A] to-[#C72C41] text-white rounded-lg hover:from-[#C72C41] hover:to-[#E94560] transition-all duration-200 font-medium"
             >
               Close
             </button>

@@ -1,62 +1,44 @@
 'use client'
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, ReactNode } from 'react';
+import { useLocalStorage } from '@/hooks/useLocalStorage';
+import { FontSize, FontSizeContextType } from '@/types/context';
+import { cn } from '@/lib/utils';
 
-type FontSize = 'small' | 'medium' | 'large';
-
-interface FontSizeContextType {
-  fontSize: FontSize;
-  setFontSize: (size: FontSize) => void;
-  getFontSizeClass: (baseClass: string) => string;
-}
-
-const FontSizeContext = createContext<FontSizeContextType | undefined>(undefined);
+export const FontSizeContext = createContext<FontSizeContextType | undefined>(undefined);
 
 interface FontSizeProviderProps {
   children: ReactNode;
 }
 
+const FONT_SIZE_MAP: Record<FontSize, string> = {
+  small: 'text-sm',
+  medium: 'text-base',
+  large: 'text-lg',
+};
+
 export const FontSizeProvider: React.FC<FontSizeProviderProps> = ({ children }) => {
-  const [fontSize, setFontSizeState] = useState<FontSize>('medium');
-
-  useEffect(() => {
-    // Load font size from localStorage on mount
-    const savedFontSize = localStorage.getItem('fontSize') as FontSize;
-    if (savedFontSize && ['small', 'medium', 'large'].includes(savedFontSize)) {
-      setFontSizeState(savedFontSize);
-    }
-  }, []);
-
-  const setFontSize = (size: FontSize) => {
-    setFontSizeState(size);
-    localStorage.setItem('fontSize', size);
-  };
+  const [fontSize, setFontSize, isMounted] = useLocalStorage<FontSize>('fontSize', 'medium');
 
   const getFontSizeClass = (baseClass: string) => {
-    // Add font size modifier class
-    const fontSizeModifier = `font-size-${fontSize}`;
+    // If not mounted yet, we can't reliably know the font size from localStorage
+    // but we can return the base class or a default. 
+    // Usually, we just return the calculated class and let the hydration handle the update.
+    const currentSize = isMounted ? fontSize : 'medium';
+    const fontSizeModifier = `font-size-${currentSize}`;
     
-    // If the class already has a text size, add the modifier
     if (baseClass.includes('text-')) {
-      return `${baseClass} ${fontSizeModifier}`;
+      return cn(baseClass, fontSizeModifier);
     }
 
-    // If no text size specified, apply default with modifier
-    const defaultSize = fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-lg' : 'text-base';
-    return `${defaultSize} ${fontSizeModifier}`;
+    return cn(FONT_SIZE_MAP[currentSize], fontSizeModifier, baseClass);
   };
 
   return (
     <FontSizeContext.Provider value={{ fontSize, setFontSize, getFontSizeClass }}>
-      {children}
+      {/* We conditionally hide children until mounted if we want to avoid flickering, 
+          but the PROVIDER must always be rendered. */}
+      {isMounted ? children : <div style={{ visibility: 'hidden' }}>{children}</div>}
     </FontSizeContext.Provider>
   );
-};
-
-export const useFontSize = (): FontSizeContextType => {
-  const context = useContext(FontSizeContext);
-  if (context === undefined) {
-    throw new Error('useFontSize must be used within a FontSizeProvider');
-  }
-  return context;
 };
