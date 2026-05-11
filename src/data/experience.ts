@@ -5,7 +5,7 @@ export const getExperienceData = (t: (key: string) => string | string[]): Educat
     title: t('experience.skyfrog.title') as string,
     period: t('experience.skyfrog.period') as string,
     detail: t('experience.skyfrog.detail') as string,
-    image: `/images/skyfrog.png`,
+    image: `/images/skyfrog-1.png`,
     status: t('experience.status.current') as string,
   },
   {
